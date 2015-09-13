@@ -1,0 +1,77 @@
+:deckjs_theme: swiss
+= AsciiDoc et sa suite logicielle
+Sébastien Nicaisse
+
+== Qu'est-ce qu'asciiDoc ? (1/2)
+
+[%step]
+* Un format de document créé en 2002 par Stuart Rackham.
+
+[%step]
+* Il est... 
+
+- *Simple* : un format plat en mode text.
+
+- *Efficace* : permet au rédacteur de se focaliser uniquement sur le contenu.
+
+- *Populaire* : Un outil de génération de documentation (http://gist.asciidoctor.org/[DocGists^]) pour les utilisateurs Github. 
+
+- *Puissant* : Possibilité de générer un grand nombre de formats fichiers (HTML5, PDF, LATEX, etc...).
+
+- *Extensible* : De nombreuses extensions existes (https://github.com/asciidoctor/asciidoctor-deck.js[asciidoctor-deck^], https://github.com/asciidoctor/asciidoctor-diagram[asciidoctor-diagram^] ...). 
+
+== Qu'est-ce qu'asciiDoc ? (2/2)
+
+[ditaa]
+----
+                  +-----------+
+                  |  Template |
+                  |  AsciiDoc |
+                  |  cRED {d} |
+                  +-----+-----+
+                        |
+                        |
+                        v                          
++----------+    +---------------+           +---------------------------+
+| Fichier  |    |               | genere    |                           |
+| AsciiDoc +--->|   AsciiDoc    +---------> |      Fichier              |
+| (.adoc)  |    | Preprocesseur |           | HTML5 ou PDF ou LATEX ... |
+| cGRE  {d}|    |    cPNK       |           |         cBLU     {d}      |
++----------+    +---------------+           +---------------------------+
+                       ^
+                       |
+                       |
+                  +----+------+
+                  |   Style   |
+                  |  AsciiDoc |
+                  |  cYEL {d} |
+                  +-----+-----+
+
+----
+
+== Slide Two
+
+[ditaa]
+----
+                   +-------------+
+                   | asciidoctor |-------+
+                   |  diagram    |       |
+                   +-------------+       | png out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ asciidoctor +--> |               |
+ |  Text  |   +-------------+    |Beatiful output|
+ |Document|   |   !magic!   |    |               |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+----
+
+== Slide three
+
+[.canvas-caption, position=center-up]
+Hello World - Good Bye Cruel World
