@@ -49,6 +49,34 @@ Sébastien Nicaisse
 
 ----
 
+== asciiDoc Syntax (1/)
+
+=== Les sections
+
+----
+=== Section One
+
+=== Section Two
+
+:sectnums:
+
+=== Section One
+
+=== Section Two
+
+----
+
+=== Section One
+
+=== Section Two
+
+:sectnums:
+
+=== Section One
+
+=== Section Two
+
+
 == Slide Two
 
 [ditaa]
