@@ -5,7 +5,7 @@ Sébastien Nicaisse
 == Qu'est-ce qu'asciiDoc ? (1/2)
 
 [%step]
-* Un format de document créé en 2002 par Stuart Rackham.
+* Un format de document créé en 2002 par Stuart Rackham (la http://www.methods.co.nz/asciidoc/userguide.html[spec^]).
 
 [%step]
 * Il est... 
@@ -293,4 +293,58 @@ digraph g {
     c -> d
     d -> a
 }
+----
+
+== D'autres extensions
+
+* https://github.com/domgold/asciidoctor-gherkin-extension[asciidoctor-gherkin-extension^] 
+
+* http://fix.github.io/asciidoctor-screenshot/[Asciidocshot^]
+
+* https://github.com/allati/asciidoctor-extension-monotree[asciidoctor-extension-monotree^]
+
+* https://github.com/asciidoctor/asciidoctor-latex[asciidoctor-latex^]
+
+* http://asciidoctor.org/docs/asciidoctor-diagram/[asciidoctor-diagram^]
+
+* https://github.com/asciidoctor/asciidoctor-deck.js[asciidoctor-deck.js^]
+
+== Les principaux outils
+
+=== Compilateurs
+
+* http://www.methods.co.nz/asciidoc/manpage.html[asciidoc^]
+
+* http://asciidoctor.org/[asciidoctor^]
+
+=== Plugins de génération de la documentation du code source
+
+* https://github.com/asciidoctor/asciidoclet[asciidoclet^]
+
+* https://github.com/asciidoctor/asciidoctor-grunt-plugin[plugin grunt^]
+
+=== Plugins des outils de gestions de dépendances
+
+* https://github.com/asciidoctor/asciidoctor-maven-examples[maven^]
+
+* https://github.com/asciidoctor/asciidoctor-gradle-plugin[gradle^]
+
+=== Plugins IDE
+
+* https://github.com/maxandersen/jbosstools-asciidoctor[eclipse^]
+
+* https://github.com/asciidoctor/asciidoctor-intellij-plugin[intellij^]
+
+=== Plugins navigateur
+
+* https://github.com/asciidoctor/asciidoctor-firefox-addon[firefox^]
+
+* https://github.com/asciidoctor/asciidoctor-chrome-extension[chrome^]
+
+== Demo
+
+[source]
+
+----
+sudo asciidoctor -T /home/soyn7401/Modèles/asciidoctor-deck.js-master/templates/haml -r asciidoctor-diagram -o /var/www/html/asciiDocPres/asciiDocPres.html /data/workspace/Doc/asciidoc/asciiDocPres.adoc
 ----
